@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F9"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleAttended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мои посещенные занятия"
+        android:textSize="32sp"
+        android:textColor="#4E3A32"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAttended"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:contentDescription="Список посещенных занятий"/>
+</LinearLayout>

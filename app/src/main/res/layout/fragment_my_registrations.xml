@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F8"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleMyRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мои записи"
+        android:textSize="32sp"
+        android:textColor="#4E3A32"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMyClasses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:contentDescription="Список моих записей" />
+
+</LinearLayout>

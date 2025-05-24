@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp">
+
+    <!-- Левая колонка: Время и дата -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/left_column_background"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/classTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:textSize="18sp"
+            android:textColor="#4E3A32"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E3A32"
+            android:layout_marginVertical="4dp" />
+
+        <TextView
+            android:id="@+id/classDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02.03"
+            android:textSize="16sp"
+            android:textColor="#4E3A32"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Центральный блок: описание -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/classDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Балет"
+            android:textColor="#4E3A32"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/classTrainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Семен"
+            android:textColor="#4E3A32"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/classLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Начальный"
+            android:textColor="#4E3A32"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <!-- Правая кнопка -->
+    <Button
+        android:id="@+id/btnRegisterClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Записаться"
+        android:textColor="#B51224"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F0E0DD"/>
+</LinearLayout>
