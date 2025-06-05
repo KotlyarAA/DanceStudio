@@ -59,7 +59,7 @@ public class LoginFragment extends Fragment {
                             // Заменяем текущий фрагмент на фрагмент профиля
                             requireActivity().getSupportFragmentManager()
                                     .beginTransaction()
-                                    .replace(R.id.fragment_container, new ProfileFragment())
+                                    .replace(R.id.fragment_container, new ScheduleFragment())
                                     .commit();
                         } else {
                             // Если вход не удался — выводим ошибку

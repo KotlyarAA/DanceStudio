@@ -116,7 +116,7 @@ public class ScheduleFragment extends Fragment {
         filteredClasses.clear();
 
         allClasses.add(new DanceClass("c0", "Хип-хоп", "Средний", "Алексей", "2025-06-10", "19:20"));
-        allClasses.add(new DanceClass("c1", "Хип-хоп", "Начальный", "Алексей", "2024-06-15", "18:00")); // прошлое
+        allClasses.add(new DanceClass("c1", "Хип-хоп", "Начальный", "Алексей", "2025-06-15", "18:00")); // прошлое
         allClasses.add(new DanceClass("c2", "Балет", "Средний", "Мария", "2025-06-16", "17:00"));
         allClasses.add(new DanceClass("c3", "Сальса", "Продвинутый", "Ирина", "2025-06-17", "19:30"));
         allClasses.add(new DanceClass("c4", "Танго", "Начальный", "Влад", "2025-06-18", "20:00"));
